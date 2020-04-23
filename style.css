@@ -1,0 +1,97 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+#main
+{
+	background-image:url(images/c3.png);
+	background-repeat:x-repeat;
+	background-size:cover;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	animation:back 35s infinite;
+	
+}
+
+#sprite
+{
+    background-image:url(images/d1.png);
+	height:310px;
+	width:230px;
+	animation:dora 1s infinite steps(4);
+	position:absolute;
+	top:300px;
+	left:20%;
+}
+#cat
+{
+	background-image:url(images/original.gif);
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:300px;
+	height:300px;
+	position:absolute;
+	right:10%;
+	top:300px;
+}
+
+#butterfly
+{
+	background-image:url(images/b1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:60px;
+	height:59px;
+	position:absolute;
+	left:0;
+	top:120px;
+	animation:b 5s infinite steps(14);
+}
+@keyframes dora
+{
+	0%
+	{
+		background-position:0px 310px;
+		transform:translateX(0px);
+	}
+	100%
+	{
+		background-position:-990px 310px;
+		
+	}
+	
+}
+
+@keyframes b
+{
+	0%
+	{
+		background-position:0px;
+		transform:translateX(0px);
+	}
+	100%
+	{
+		background-position:-979px;
+		transform:translateX(1500px);
+	}
+	
+}
+@keyframes back
+{
+	from
+	{
+		background-position:0px 0px;
+		
+	
+	}
+	to
+	{
+		background-position:-1500px 0px;
+		
+	}
+}
+
